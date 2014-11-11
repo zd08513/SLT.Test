@@ -2,3 +2,4 @@ E:\Projects\SLT.Test\SLT.Common\bin\Debug\SLT.Common.dll
 E:\Projects\SLT.Test\SLT.Common\bin\Debug\SLT.Common.pdb
 E:\Projects\SLT.Test\SLT.Common\obj\Debug\SLT.Common.dll
 E:\Projects\SLT.Test\SLT.Common\obj\Debug\SLT.Common.pdb
+E:\Projects\SLT.Test\SLT.Common\obj\Debug\SLT.Common.csprojResolveAssemblyReference.cache

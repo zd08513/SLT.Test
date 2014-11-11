@@ -1,0 +1,22 @@
+﻿<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>@ViewBag.Title</title>
+    <link href="~/easyui/themes/default/easyui.css" rel="stylesheet" />
+    <link href="~/easyui/themes/icon.css" rel="stylesheet" />
+    <link href="~/easyui/demo/demo.css" rel="stylesheet" />
+    <script src="~/easyui/jquery.min.js"></script>
+    <script src="~/easyui/jquery.easyui.min.js"></script>
+</head>
+<body class="easyui-layout">  
+    <div data-options="region:'north',title:'测试系统管理',split:false" style="height:100px;"></div>  
+    <div data-options="region:'west',title:'菜单',split:false" style="width:155px;">
+        @Html.Partial("_LeftPartial")
+    </div>  
+    <div data-options="region:'center'" style="padding:2px;">
+        @RenderBody()
+    </div>
+</body> 
+</html>

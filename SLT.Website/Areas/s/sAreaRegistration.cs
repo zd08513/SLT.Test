@@ -1,22 +1,22 @@
 ﻿using System.Web.Mvc;
 
-namespace SLT.Website.Areas.system
+namespace SLT.Website.Areas.s
 {
-    public class systemAreaRegistration : AreaRegistration
+    public class sAreaRegistration : AreaRegistration
     {
         public override string AreaName
         {
             get
             {
-                return "system";
+                return "s";
             }
         }
 
         public override void RegisterArea(AreaRegistrationContext context)
         {
             context.MapRoute(
-                "system_default",
-                "system/{controller}/{action}/{id}",
+                "s_default",
+                "s/{controller}/{action}/{id}",
                 new { action = "Index", id = UrlParameter.Optional }
             );
         }

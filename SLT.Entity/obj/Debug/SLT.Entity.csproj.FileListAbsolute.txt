@@ -4,3 +4,4 @@ E:\Projects\SLT.Test\SLT.Entity\bin\Debug\DevNet.Common.dll
 E:\Projects\SLT.Test\SLT.Entity\bin\Debug\DevNet.Core.dll
 E:\Projects\SLT.Test\SLT.Entity\obj\Debug\SLT.Entity.dll
 E:\Projects\SLT.Test\SLT.Entity\obj\Debug\SLT.Entity.pdb
+E:\Projects\SLT.Test\SLT.Entity\obj\Debug\SLT.Entity.csprojResolveAssemblyReference.cache

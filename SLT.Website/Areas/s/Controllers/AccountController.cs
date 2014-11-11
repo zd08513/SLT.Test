@@ -1,14 +1,14 @@
 ﻿using SLT.BLL;
 using SLT.Common;
 using SLT.Entity;
-using SLT.Website.Areas.system.Models;
+using SLT.Website.Areas.s.Models;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
 using System.Web.Mvc;
 
-namespace SLT.Website.Areas.system.Controllers
+namespace SLT.Website.Areas.s.Controllers
 {
     public class AccountController : Controller
     {
@@ -23,7 +23,7 @@ namespace SLT.Website.Areas.system.Controllers
             if (ModelState.IsValid)
             {
                 BLLAdminUser bll = new BLLAdminUser();
-                AdminUser obj=bll.Login(adminUserModel.UserAccount, Helper.Encrypt(adminUserModel.UserPwd));
+                AdminUser obj = bll.Login(adminUserModel.UserAccount, Helper.Encrypt(adminUserModel.UserPwd));
                 if (obj != null)
                 {
                     Session["AdminUser"] = obj;
@@ -36,5 +36,6 @@ namespace SLT.Website.Areas.system.Controllers
             }
             return View(adminUserModel);
         }
+
     }
 }

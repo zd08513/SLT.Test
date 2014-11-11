@@ -1,0 +1,12 @@
+﻿@functions{
+    /// <summary>
+    /// 重写地址
+    /// </summary>
+    /// <param name="url"></param>
+    /// <returns></returns>
+    public static IHtmlString GetURLString(string url){
+        if (url.IndexOf(".aspx") == -1) return new HtmlString(url);
+        int length=url.Length;
+        return new HtmlString(url.Substring(0, length - 5));
+    }
+}

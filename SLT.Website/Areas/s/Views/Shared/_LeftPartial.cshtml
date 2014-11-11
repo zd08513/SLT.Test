@@ -1,0 +1,23 @@
+﻿@using SLT.Entity
+@{
+    List<AdminMenu> list = ViewBag.MenuList as List<AdminMenu>;
+    var url = Request.Url.Authority.ToString();
+}
+<div id="aa" class="easyui-accordion" style="width:150px;height:auto">
+    @if(list.Count>0){  
+        foreach (AdminMenu item in list)
+        {
+            if (item.ParentMenuID == 0)
+            {
+                <div title="@item.MenuName" style="overflow: auto; padding: 10px;">
+                    @foreach (AdminMenu a in list)
+                    {
+                        if(item.MenuSort==a.ParentMenuID){
+                            <p><a href="javascript:AddTabs('@a.MenuName','http://@(url)/s/@UIHelper.GetURLString(a.MenuUrl)')" title="@a.MenuName">@a.MenuName</a></p>
+                        }
+                    }
+                </div>
+            }
+        }
+    }
+</div>

@@ -23,7 +23,8 @@ namespace SLT.Website.Filter
         {
             if (filterContext.HttpContext.Session["AdminUser"] == null)
             {
-                filterContext.HttpContext.Response.Redirect("~/system/account/login");
+                string url = filterContext.RequestContext.HttpContext.Request.Url.Authority.ToString();
+                filterContext.HttpContext.Response.Redirect(string.Format("http://{0}/s/account/login",url));
             }
         }
     }
