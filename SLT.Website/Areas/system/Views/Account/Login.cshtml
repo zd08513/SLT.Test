@@ -1,0 +1,49 @@
+﻿@model SLT.Website.Areas.system.Models.AdminUserModel
+
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>后台登录页</title>
+</head>
+<body>
+    <script src="~/Scripts/jquery-1.7.1.min.js"></script>
+    <script src="~/Scripts/jquery.validate.min.js"></script>
+    <script src="~/Scripts/jquery.validate.unobtrusive.min.js"></script>
+    
+    @using (Html.BeginForm()) {
+        @Html.AntiForgeryToken()
+        @Html.ValidationSummary(true)
+    
+        <fieldset>
+            <legend>AdminUserModel</legend>
+    
+            <div class="editor-label">
+                @Html.LabelFor(model => model.UserAccount)
+            </div>
+            <div class="editor-field">
+                @Html.EditorFor(model => model.UserAccount)
+                @Html.ValidationMessageFor(model => model.UserAccount)
+            </div>
+    
+            <div class="editor-label">
+                @Html.LabelFor(model => model.UserPwd)
+            </div>
+            <div class="editor-field">
+                @Html.EditorFor(model => model.UserPwd)
+                @Html.ValidationMessageFor(model => model.UserPwd)
+            </div>
+    
+            <p>
+                <input type="submit" value="登录" />
+            </p>
+        </fieldset>
+    }
+    
+</body>
+</html>

@@ -1,0 +1,9 @@
+E:\Projects\SLT.Test\SLT.DAL\bin\Debug\SLT.DAL.dll
+E:\Projects\SLT.Test\SLT.DAL\bin\Debug\SLT.DAL.pdb
+E:\Projects\SLT.Test\SLT.DAL\bin\Debug\DevNet.Common.dll
+E:\Projects\SLT.Test\SLT.DAL\bin\Debug\DevNet.Core.dll
+E:\Projects\SLT.Test\SLT.DAL\bin\Debug\SLT.Entity.dll
+E:\Projects\SLT.Test\SLT.DAL\bin\Debug\SLT.Entity.pdb
+E:\Projects\SLT.Test\SLT.DAL\obj\Debug\SLT.DAL.csprojResolveAssemblyReference.cache
+E:\Projects\SLT.Test\SLT.DAL\obj\Debug\SLT.DAL.dll
+E:\Projects\SLT.Test\SLT.DAL\obj\Debug\SLT.DAL.pdb
